@@ -91,7 +91,7 @@ html, body {
   }
   
   section#inicio {
-    background-image: url("./img/Banner.png.png");
+    background-image: url("./img/BannerFinal.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -102,16 +102,40 @@ html, body {
   }
   
   section#inicio h2 {
-    font-size: 6rem;
+    font-size: 3.4rem;
   }
   
   section#inicio span#subtitle {
-    margin-right: 8rem;
-    font-size: 1.5rem;
+    border-right: 2px solid #fff;
+    margin-right: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    
   }
+#subtitle {
+  animation: cursorBlink 1000ms steps(40) infinite normal, typing 10000ms steps(100) normal 1s both;
+  white-space: nowrap;
+  max-width: 0vw; 
+  overflow: hidden;
+}
+
+@keyframes typing {
+  100% {
+    max-width: 100vw;
+  }
+}
+  
+
+@keyframes cursorBlink {
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+   
   
   .text-shadow {
-    text-shadow: 4px 4px 10px #000000;
+    text-shadow: 4px 4px 15px #000000;
   }
   
   section#inicio div#arraste {

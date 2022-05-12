@@ -60,3 +60,10 @@ btnEnviar.addEventListener("click", ()=>{
 setTimeout(() => {
   document.querySelector('#alerta').style.display = 'none';
 }, 5000)
+
+let typed = new Typed(".typing", {
+  String:["Desensolvedor", "Designer", "Freelancer"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+})
